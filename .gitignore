@@ -1,0 +1,25 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore quad_maps
+quad_maps/
+
+# Ignore outputs for now
+outputs/
+
+# Ignore line cleeaning and original extraction file for now
+line_cleaning.ipynb
+polygon_extraction.ipynb
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+
+
+# Ignore environment files
+.env
+.DS_Store
