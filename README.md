@@ -1,6 +1,7 @@
 # Digitizing Historic Land Use Maps for Kern County
 
 <img width="639" alt="Screenshot 2025-06-07 at 4 18 53 PM" src="https://github.com/user-attachments/assets/f5c10ea6-af01-44f2-b343-cce9fd70e0d5" />
+*1984 historical land use map from Kern County*
 
 
 ## About
