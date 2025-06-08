@@ -2,15 +2,17 @@
 __pycache__/
 *.pyc
 
-# Ignore quad_maps
+# Ignore quad_maps and 1990 maps
 quad_maps/
+kern_1990/
 
-# Ignore outputs for now
+# Ignore outputs
 outputs/
 
 # Ignore line cleeaning and original extraction file for now
-line_cleaning.ipynb
 polygon_extraction.ipynb
+filtered_boundaries/
+clean_up_testing/filtered_boundaries/
 
 # Ignore VS Code settings
 .vscode/
