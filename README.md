@@ -11,6 +11,8 @@ The digitization process involves several steps:
 1. Georeferencing: Historical maps from 1958, 1969, 1977, and 1984 are georeferenced using Quad-G+ to align them with real-world coordinates
 2. Digitization: The `polygon_digitization.ipynb` notebook processes the georeferenced maps
 3. Processing: The `plotting.ipynb` notebook combines individual quads into a single shapefile for analysis and visualization
+4. Cleaning: The `clean_up_testing/` folder contains initial explorations of polygon cleaning methods to remove noise and artifacts from digitized field boundaries
+
 
 The `excel_map_info` folder contains Excel sheets with coordinate and metadata information for each map, which is used during both georeferencing and digitization to ensure spatial accuracy.
 
@@ -76,6 +78,24 @@ Customize the Output Setup tab to your desired file locations. The settings used
 2. Run `polygon_digitization.ipynb` to digitize the georeferenced maps
 3. Use `plotting.ipynb` to visualize and combine individual quad shapefiles into a single shapefile
 4. Reference Excel files in excel_map_info/ for coordinate and metadata information on maps
+
+## Polygon Cleaning
+The digitized field polygons contain noise and artifacts from the original hand-drawn maps that need to be filtered out. The `clean_up_testing/` folder contains preliminary explorations of different cleaning methods:
+### Current Cleaning Methods
+#### Comparison Testing (`comparison_test.ipynb`)
+
+- Compares digitized historical maps against an already digitized 1990 reference map
+- Identifies matching and non-matching line segments between datasets
+- Status: Preliminary exploration - requires further development
+
+#### Line Filtering (`line_cleaning.ipynb`)
+
+- Filters out diagonal lines that are likely map artifacts rather than field boundaries
+- Status: Preliminary exploration - requires further development
+
+### Future Development
+
+Both cleaning methods are in early stages and require significant improvement. Other cleaning methods should also be explored.
 
 ## Acknowledgements
 
