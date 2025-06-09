@@ -31,7 +31,7 @@ historic_lulc_ag_lab/
 |   ├── quad_maps_1958.xlsx
 |   ├── quad_maps_1969.xlsx
 |   ├── quad_maps_1977.xlsx
-|   └──  quad_maps_1984.xlsx
+|   └── quad_maps_1984.xlsx
 ├── clean_up_testing/          # Testing different methods for cleaning field polygons 
 |   ├── comparison_test.ipynb  # Comparison between digitized maps and 1990 maps
 |   ├── line_cleaning.ipynb    # Filter out diagonal lines
