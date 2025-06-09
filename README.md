@@ -9,7 +9,7 @@
 This repository contains scripts to digitize hand-drawn, georeferenced historical land use maps from Kern County, California. The maps are from the California Department of Water Resources (DWR). The ultimate goal is to identify lands that were once used for agriculture but have since been retired, and analyze how those areas may have revegetated over time.
 The digitization process involves several steps:
 1. Georeferencing: Historical maps from 1958, 1969, 1977, and 1984 are georeferenced using Quad-G+ to align them with real-world coordinates
-2. Digitization: The `batching_test.ipynb` notebook processes the georeferenced maps
+2. Digitization: The `polygon_digitization.ipynb` notebook processes the georeferenced maps
 3. Processing: The `plotting.ipynb` notebook combines individual quads into a single shapefile for analysis and visualization
 
 The `excel_map_info` folder contains Excel sheets with coordinate and metadata information for each map, which is used during both georeferencing and digitization to ensure spatial accuracy.
@@ -23,10 +23,17 @@ The historical maps were scanned and georeferenced outside of this repository us
  ## Repository Structure
  ```
 historic_lulc_ag_lab/
-├── batching_test.ipynb       # Main digitizing workflow
-├── plotting.ipynb            # Plotting
-├── excel_map_info/           # Coordinate and map metadata (excel files)
-├── .gitignore                # Files/folders excluded from Git
+├── polygon_digitization.ipynb # Main digitizing workflow
+├── plotting.ipynb             # Plotting
+├── excel_map_info/            # Coordinate and map metadata (excel files)
+|   ├── quad_maps_1958.xlsx
+|   ├── quad_maps_1969.xlsx
+|   ├── quad_maps_1977.xlsx
+|   └──  quad_maps_1984.xlsx
+├── clean_up_testing/          # Testing different methods for cleaning field polygons 
+|   ├── comparison_test.ipynb  # Comparison between digitized maps and 1990 maps
+|   ├── line_cleaning.ipynb    # Filter out diagonal lines
+├── .gitignore                 # Files/folders excluded from Git
 └── README.md                 
 
 ```
@@ -66,7 +73,7 @@ Customize the Output Setup tab to your desired file locations. The settings used
 
 ## Usage
 1. Ensure historical maps are georeferenced using Quad-G+ (see above)
-2. Run `batching_test.ipynb` to digitize the georeferenced maps
+2. Run `polygon_digitization.ipynb` to digitize the georeferenced maps
 3. Use `plotting.ipynb` to visualize and combine individual quad shapefiles into a single shapefile
 4. Reference Excel files in excel_map_info/ for coordinate and metadata information on maps
 
