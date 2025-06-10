@@ -42,7 +42,7 @@ historic_lulc_ag_lab/
 
 ## Georeferencing with Quad-G+
 
-Before using this repository, the original hand-drawn maps must be georeferenced using Quad-G+. Both the application and detailed documentation can be found at this [UW-Madison Box folder](https://uwmadison.app.box.com/s/tkccw1j5u3ensn2e10hrl1eiek78z9r6/folder/145924177108).
+Before using this repository, the original hand-drawn maps must be georeferenced using Quad-G+. Both the application and detailed documentation can be found at this [Box folder](https://uwmadison.app.box.com/s/tkccw1j5u3ensn2e10hrl1eiek78z9r6/folder/145924177108).
 
 ### Setup Requirements
 To use Quad-G+, you need CSV files containing information about each individual quad. These CSV files are located in the excel_map_info folder of this repository. Below is an example of the required file structure:
